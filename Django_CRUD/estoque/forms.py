@@ -9,7 +9,7 @@ class PlaceholderTextarea(forms.Textarea):
 
 class ProdutoForm(forms.ModelForm):
     descricao = forms.CharField(
-        label='',  # Defina o rótulo como uma string vazia
+        label='',  
         widget=PlaceholderTextarea("Insira a descrição do produto aqui..."),
         max_length=200,
     )
