@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\styles.css' %}">
+</head>
+<body>
+    <h1>Detalhes do Produto</h1>
+    <p><strong>Nome:</strong> {{ produto.nome }}</p>
+    <p><strong>Descrição:</strong> {{ produto.descricao }}</p>
+    <p><strong>Preço:</strong> R$ {{ produto.preco }}</p>
+    <p>Data de Adição: {{ produto.data_adicao }}</p>
+
+    <div class="button-container">
+        <button onclick="window.location.href = '{% url 'editar_produto' produto.pk %}'">Editar Produto</button>
+        <button onclick="window.location.href = '{% url 'deletar_produto' produto.pk %}'">Deletar Produto</button>
+        <button onclick="window.location.href = '{% url 'lista_estoque' %}'">Voltar para a Lista</button>
+    </div>
+</body>
+</html>

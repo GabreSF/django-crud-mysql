@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Estoque</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\styles.css' %}">
+</head>
+<body>
+    <h1>Lista de Estoque</h1>
+    <ul>
+        {% for produto in produtos %}
+            <li>
+                <a href="{% url 'detalhes_produto' produto.pk %}">{{ produto.nome }}</a> - R$ {{ produto.preco }}
+                <p>Data de Adição: {{ produto.data_adicao }}</p>
+
+            </li>
+        {% endfor %}
+    </ul>
+    <button class="btn" onclick="location.href='{% url 'criar_produto' %}'">Adicionar Produto</button>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Arquivo styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da viewport */
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Arquivo styles.css */
+.button-container {
+    display: flex;
+    flex-direction: row; /* Alinha os botões na horizontal */
+    border-radius: 20px;
+}
+
+.button-container button {
+    margin-right: 10px; /* Adicione margem à direita de cada botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Espaçamento interno (altura, largura) do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte em negrito */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar o mouse */
+    border-radius: 20px;
+}
+
+.button-container button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Arquivo button-styles.css */
+
+/* Arquivo button-styles.css */
+
+.custom-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: inline; /* Exibir os botões em linha */
+}
+
+
+
+

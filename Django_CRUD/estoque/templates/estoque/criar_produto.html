@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criar Produto</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\button-styles.css' %}">
+</head>
+<body>
+    <h1>Criar Produto</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="button-container">
+            <button class="custom-button" type="submit">Salvar Produto</button>
+            <button onclick="window.location.href = '{% url 'lista_estoque' %}'">Voltar para a Lista</button>
+        </div>
+        
+    </form>
+    
+    <!-- Adicione o campo 'descricao' com placeholder diretamente aqui -->
+    <script>
+        document.querySelector("#id_descricao").placeholder = "Insira a descrição do produto aqui...";
+    </script>
+</body>
+</html>

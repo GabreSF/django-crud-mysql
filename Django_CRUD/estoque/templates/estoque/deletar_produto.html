@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deletar Produto</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\styles.css' %}">
+</head>
+<body>
+    <h1>Deletar Produto</h1>
+    <p>Tem certeza de que deseja deletar o produto "{{ produto.nome }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <div class="button-container">
+            <button type="submit">Confirmar Deleção</button>
+            <button onclick="window.location.href = '{% url 'lista_estoque' %}'">Cancelar</button>
+        </div>
+    </form>
+</body>
+</html>
