@@ -62,18 +62,19 @@ WSGI_APPLICATION = 'Django_CRUD.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# settings.py
+
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django-crud',
-        'USER': 'root',
-        'PASSWORD': 'GA7895123Sf!',
-        'HOST': 'localhost',  # ou o endereço do servidor MySQL
-        'PORT': '3306',       # a porta padrão do MySQL é 3306
+        'NAME': 'seu_banco_de_dados',
+        'USER': 'seu_usuario',
+        'PASSWORD': 'sua_senha',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation
